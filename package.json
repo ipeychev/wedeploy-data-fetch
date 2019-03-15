@@ -1,0 +1,17 @@
+{
+  "name": "fetch-all-data",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Fetches all data from given collection",
+  "main": "fetchall.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "WeDeploy Team",
+  "license": "MIT",
+  "dependencies": {
+    "wedeploy": "^4.5.1",
+    "yargs": "^13.2.2"
+  }
+}
