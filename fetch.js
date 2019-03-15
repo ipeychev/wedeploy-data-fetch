@@ -78,7 +78,7 @@ let argv = yargs
     'Error: no command specified. You need to specify at least one command.',
     'Please specify only one command.'
   )
-  .example('$ node $0 save -u https://db-myproject.wedeploy.io -c mycollection -t ce45tyu789-3290-487d-453-345dfasfd -o mycollection.json',
+  .example('$ node $0 save -u https://db-myproject.wedeploy.io -c mycollection -t ce45tyu789-3290-487d-453-345dfasfd -f mycollection.json',
     `Fetch all data from collection 'mycollection' in this datastore: 'https://db-myproject.wedeploy.io' ` +
     `and save the result to a file, called 'mycollection.json'`)
   .example('$ node $0 print -u https://db-myproject.wedeploy.io -c mycollection -t ce45tyu789-3290-487d-453-345dfasfd',
