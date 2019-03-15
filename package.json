@@ -1,14 +1,11 @@
 {
-  "name": "fetch-all-data",
+  "name": "fetch-wedeploy",
   "private": true,
   "version": "1.0.0",
-  "description": "Fetches all data from given collection",
-  "main": "fetchall.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "description": "Fetches all data from given collection in WeDeploy Data or Auth service",
+  "main": "fetch.js",
   "keywords": [],
-  "author": "WeDeploy Team",
+  "author": "WeDeploy Inc.",
   "license": "MIT",
   "dependencies": {
     "wedeploy": "^4.5.1",
