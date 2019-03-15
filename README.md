@@ -18,14 +18,14 @@ There are two modes - to fetch and print data from a collection to the terminal,
 1. To fetch and save the data to a file, execute:
 
 ```
-$ node fetch save -u https://db-myproject.wedeploy.io -c mycollection -t ce45tyu789-3290-487d-453-345dfasfd -o mycollection.json
+$ node fetch save -u https://db-myproject.wedeploy.io -c mycollection -t ce45tyu789-3290-487d-453-345dfasfd -f mycollection.json
 ```
 
 where the arguments are:
 `-u` - URL of the Data/Auth service
 `-c` - The name of the collection to be fetched
 `-t` - The Authentication token. This is WeDeploy's project master token.
-`-o` - The file, where the fetched data will be saved
+`-f` - The file, where the fetched data will be saved
 
 _Note_: in case of large collection, you may need to add `-s` option to the list of arguments. This will fetch the data still in batches, but sequentially, instead in parallel.
 
