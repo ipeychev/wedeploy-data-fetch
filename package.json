@@ -1,5 +1,5 @@
 {
-  "name": "fetch-wedeploy",
+  "name": "wedeploy-fetch-data",
   "private": true,
   "version": "1.0.0",
   "description": "Fetches all data from given collection in WeDeploy Data or Auth service",
