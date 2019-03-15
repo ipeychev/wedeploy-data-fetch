@@ -14,7 +14,7 @@ npm install
 
 ## Usage
 
-There are two modes - to fetch and print data from a collection to the terminal, or to save the data in a file.
+There are two modes - to fetch and print data from a collection to the terminal, or to save the data to a file.
 
 1. To fetch and save the data to a file, execute:
 
