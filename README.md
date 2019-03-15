@@ -1,4 +1,4 @@
-# WeDeploy Data Fetch
+# WeDeploy Fetch Data
 
 A utility that facilitates fetching data from Data or Auth services
 
