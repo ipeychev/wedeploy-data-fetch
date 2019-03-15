@@ -124,15 +124,15 @@ async function fetchAllParallel(queryFn, limit = 10000) {
     } else {
       finalResult = result.documents;
     }
-  }
 
-  const endTime = Date.now();
-  if (command === 'save') {
-    fs.writeFileSync(argv.file, JSON.stringify(finalResult));
-    console.log(`Saved ${finalResult.length} records in ${endTime - startTime}ms.`);
-  } else if (command === 'print') {
-    console.log(finalResult);
-    console.log(`Fetched ${finalResult.length} records in ${endTime - startTime}ms.`);
+    const endTime = Date.now();
+    if (command === 'save') {
+      fs.writeFileSync(argv.file, JSON.stringify(finalResult));
+      console.log(`Saved ${finalResult.length} records in ${endTime - startTime}ms.`);
+    } else if (command === 'print') {
+      console.log(finalResult);
+      console.log(`Fetched ${finalResult.length} records in ${endTime - startTime}ms.`);
+    }
   }
 }
 
