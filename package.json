@@ -1,7 +1,7 @@
 {
   "name": "wedeploy-fetch-data",
   "private": true,
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Fetches all data from given collection in WeDeploy Data or Auth service",
   "main": "fetch.js",
   "keywords": [],
