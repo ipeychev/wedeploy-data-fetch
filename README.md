@@ -4,8 +4,9 @@ A utility that facilitates fetching data from Data or Auth services
 
 ## Installation
 
-1. Download the sources from this repository and unzip them.
-2. In the directory of the project, execute:
+1. Install [NodeJS](https://nodejs.org/en/).
+2. Download the sources from this repository and unzip them.
+3. In the directory of the project, execute:
 
 ```
 npm install
@@ -22,10 +23,14 @@ $ node fetch save -u https://db-myproject.wedeploy.io -c mycollection -t ce45tyu
 ```
 
 where the arguments are:
-`-u` - URL of the Data/Auth service
-`-c` - The name of the collection to be fetched
-`-t` - The Authentication token. This is WeDeploy's project master token.
-`-f` - The file, where the fetched data will be saved
+
+`-u` The URL of the Data/Auth service
+
+`-c` The name of the collection to be fetched
+
+`-t` The Authentication token. This is WeDeploy's project master token.
+
+`-f` The file, where the fetched data will be saved
 
 _Note_: in case of large collection, you may need to add `-s` option to the list of arguments. This will fetch the data still in batches, but sequentially, instead in parallel.
 
@@ -36,9 +41,12 @@ $ node fetch print -u https://db-myproject.wedeploy.io -c mycollection -t ce45ty
 ```
 
 where the arguments are:
-`-u` - URL of the Data/Auth service
-`-c` - The name of the collection to be fetched
-`-t` - The Authentication token. This is WeDeploy's project master token.
+
+`-u` The URL of the Data/Auth service
+
+`-c` The name of the collection to be fetched
+
+`-t` The Authentication token. This is WeDeploy's project master token.
 
 ## License
 
