@@ -94,6 +94,11 @@ const command = argv._[0];
 
 fetchData(argv);
 
+/**
+ * Fetch data by sending multiple batch requests in parallel.
+ * @param {!Function} queryFn The query function to fetch the data
+ * @param {!number} limit The number of records to fetch in a batch. Default 1000
+ */
 async function fetchAllParallel(queryFn, limit = 10000) {
   console.log('Start fetching');
   const startTime = Date.now();
@@ -131,6 +136,11 @@ async function fetchAllParallel(queryFn, limit = 10000) {
   }
 }
 
+/**
+ * Fetch data by sending multiple batch requests sequentially.
+ * @param {!Function} queryFn The query function to fetch the data
+ * @param {!number} limit The number of records to fetch in a batch. Default 1000
+ */
 async function fetchAllSequential(queryFn, limit = 10000) {
   console.log('Start fetching');
   const startTime = Date.now();
@@ -199,6 +209,10 @@ async function fetchAllSequential(queryFn, limit = 10000) {
   }
 }
 
+/**
+ * Constructs Data object, query function and fetches data from the service.
+ * @param {Object} argv Program arguments
+ */
 async function fetchData(argv) {
   const data = WeDeploy
     .data(argv.url)
