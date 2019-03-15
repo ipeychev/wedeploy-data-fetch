@@ -97,7 +97,7 @@ fetchData(argv);
 /**
  * Fetch data by sending multiple batch requests in parallel.
  * @param {!Function} queryFn The query function to fetch the data
- * @param {!number} limit The number of records to fetch in a batch. Default 1000
+ * @param {!number} limit The number of records to fetch in a batch. Default 10000
  */
 async function fetchAllParallel(queryFn, limit = 10000) {
   console.log('Start fetching');
@@ -139,7 +139,7 @@ async function fetchAllParallel(queryFn, limit = 10000) {
 /**
  * Fetch data by sending multiple batch requests sequentially.
  * @param {!Function} queryFn The query function to fetch the data
- * @param {!number} limit The number of records to fetch in a batch. Default 1000
+ * @param {!number} limit The number of records to fetch in a batch. Default 10000
  */
 async function fetchAllSequential(queryFn, limit = 10000) {
   console.log('Start fetching');
